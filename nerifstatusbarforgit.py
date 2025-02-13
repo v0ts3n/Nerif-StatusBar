@@ -16,7 +16,7 @@ ison = True
 from idlelib.tooltip import Hovertip
 
 # Инициализация объекта Spotipy
-#sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='5c2fa33e816441f68e51540561e605ae', client_secret='9fd28d95c3af45e39bce47b1844eb89d', redirect_uri='http://bvotson.byethost7.com', scope='user-read-currently-playing'))
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='YOUR-SPOTIFY-CLIENT-ID', client_secret='YOUR-SPOTIFY-CLIENT-SECRET', redirect_uri='http://bvotson.byethost7.com', scope="user-read-currently-playing"))
 # Получение информации о текущем треке
 current_track = sp.current_user_playing_track()
